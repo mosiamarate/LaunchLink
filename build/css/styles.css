@@ -1,0 +1,385 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.logo {
+    margin-left: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    margin-right: 50px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.get-started {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #e0e0e0;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h1 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.hero-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.hero-image img {
+    height: 50%;
+    width: 60%;
+    margin-left: 300px;
+    margin-right: 0px;
+    
+}
+
+/* Form Section */
+.form-section {
+    padding: 50px;
+}
+.form-section h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 50%;
+    margin: auto;
+}
+
+#rsvp-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-submit {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add styles for the dropdown and textarea */
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Style for radio buttons */
+form div label {
+  margin-right: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer .logo {
+    font-size: 2.5rem;
+    text-align: left;
+    color: #fff;
+}
+
+footer .contact-details {
+    text-align: right;
+    margin-right: 150px;
+    margin-bottom: 90px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .hero-text p {
+        margin-left: 0;
+    }
+
+    .hero-image img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    #rsvp-form {
+        max-width: 100%;
+    }
+}
+
+
+/* About Section */
+.about-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .about-images img {
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .mission-section{
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 40px;
+    background-color: #d6d6d6;
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .team-member p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  
+
+/* Contact Page Styling */
+.contact-section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  /* Contact Info Styling */
+  .contact-info {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  /* Social Links Styling */
+  .social-links {
+    margin: 40px 0;
+  }
+  
+  .social-links h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .social-links .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .social-links .linkedin {
+    background-color: #000;
+  }
+  
+  .social-links .instagram {
+    background-color: #000;
+  }
+  
+  .social-links .facebook {
+    background-color: #000
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+.events-section{
+    /* margin-top: 100px; */
+    padding: 40px;
+    background-color: #bbbbbb;
+}
+.valentines-event {
+    background-color: #ffcccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+  }

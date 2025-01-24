@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LaunchLink Event Manager</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">LAUNCHLINK</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="get-started">Get Started</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>LAUNCHLINK EVENT MANAGER</h1>
+        <p>
+          LaunchLink is an all-in-one platform that streamlines event management
+          by capturing participant data, automating email workflows, and analyzing
+          feedback to drive personalized engagement and impactful follow-ups.
+        </p>
+        <button class="hero-button">Get Started</button>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-overlay">
+            <img src="event_image.jpg" alt="Event image">
+        </div>
+      </div>
+    </section>
+    
+    <section class="events-section">
+        <div class="valentines-event">
+          <h2>Valentine's Day Special</h2>
+          <p>
+            Join us for a heartfelt evening filled with love, laughter, and connections.
+          </p>
+          <p><strong>Date:</strong> February 14th, 2025</p>
+          <p><strong>Location:</strong> LaunchLink Event Hall</p>
+          <h2>RSVP NOW!!!</h2>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>RSVP Form</h2>
+        <form id="rsvp-form" netlify>
+          <!-- Name -->
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+          <!-- Email -->
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+          <!-- Contact Number -->
+          <label for="contact">Contact Number</label>
+          <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required>
+      
+          <!-- Event Name (Dropdown) -->
+          <label for="event">Event Name</label>
+          <select id="event" name="event" required>
+            <option value="" disabled selected>Select an event</option>
+            <option value="Event A">Event A</option>
+            <option value="Event B">Event B</option>
+            <option value="Event C">Event C</option>
+          </select>
+      
+          <!-- RSVP Confirmation (Radio Buttons) -->
+          <label>RSVP Confirmation</label>
+          <div>
+            <label><input type="radio" name="rsvp" value="Yes" required> Yes</label>
+            <label><input type="radio" name="rsvp" value="No"> No</label>
+          </div>
+      
+          <!-- Additional Notes (Textarea) -->
+          <label for="notes">Additional Notes</label>
+          <textarea id="notes" name="notes" placeholder="Enter any additional notes"></textarea>
+      
+          <!-- Submit Button -->
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+      </section>
+
+  </main>
+  <footer>
+    <p class="logo">LAUNCHLINK</p>
+    <div class="contact-details">
+        <h2>CONTACT US</h2>
+        <p>Email: info@launlink.co.za</p>
+        <p>Phone: +27 51 688 9619</p>
+    </div>
+    <p>Copyright &copy; 2025 LaunchLink. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
